@@ -1,0 +1,62 @@
+<main class="w-100 m-auto" style="max-width: 500px; padding: 15px;">
+    <h1 class="h3 mb-3 fw-normal">Dodavanje radionice:</h1>
+    <div class="form-floating my-2">
+        <input type="text" class="form-control" id="floatingInput" [(ngModel)]='title' placeholder="naziv">
+        <label for="floatingInput">Naziv</label>
+    </div>
+    <div class="my-2">
+        <label for="formFile" class="form-label">Naslovna Slika</label>
+        <input class="form-control" type="file" id="formFile" (change)="titlepicture($event.target)">
+    </div>
+    <div class="form-floating my-2">
+        <input type="datetime-local" class="form-control" id="floatingInput" [(ngModel)]='date' placeholder="datum">
+        <label for="floatingInput">Datum</label>
+    </div>
+    <div class="form-floating my-2">
+        <input type="text" class="form-control" id="floatingInput" [(ngModel)]='location' placeholder="lokacija">
+        <label for="floatingInput">Lokacija</label>
+    </div>
+    <div class="form-floating my-2">
+        <input type="text" class="form-control" id="floatingPassword" [(ngModel)]='shortDesc' placeholder="kratak opis">
+        <label for="floatingPassword">Kratak opis</label>
+    </div>
+    <div class="form-floating my-2">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]='longDesc'></textarea>
+        <label for="exampleFormControlTextarea1">Duzi opis</label>
+    </div>
+    <div class="form-floating my-2">
+        <input type="number" class="form-control" id="floatingInput" [(ngModel)]='spaces' placeholder="broj mesta">
+        <label for="floatingInput">Broj mesta</label>
+    </div>
+    <div class="form-floating my-2">
+        <select class="form-select" [(ngModel)]="organizer">
+            <option *ngFor="let v of valid" value="{{v._id}}">{{v.username}}</option>
+        </select>
+        <label for="floatingInput">Organizator</label>
+    </div>
+    <div class="my-3">
+        <p>Slike za galeriju (max: 5)</p>
+        <div class="my-3">
+            <div class="row my-2" *ngFor="let img of gallery">
+                <div class="col-10">
+                    <img style="max-width: 100%; max-height: 100%;" src='http://localhost:4000/gallery/{{img}}'>
+                </div>
+                <div class="col-auto">
+                    <button class="w-100 btn btn-danger" (click)='remove(img)'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                      </svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="galsize<5">
+            <div class="col">
+                <input class="form-control" type="file" id="formFile" (change)="gallerypicture($event.target)">
+            </div>
+            <div class="col-auto">
+                <button class="w-100 btn btn-secondary" (click)='add()'>Dodaj</button>
+            </div>
+        </div>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" (click)='suggest()'>Dodaj Radionicu</button>
+    <p class='greska my-2' style="white-space: pre;">{{msg.errmsg}}</p>
+</main>

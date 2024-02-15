@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <app-changepass></app-changepass>
+        </div>
+        <div class="col-9">
+            <h1 class="h3 mb-2 fw-normal">Osnovni podaci</h1>
+            <app-userdetails *ngIf="user" [user]="user" [role]="'user'" [parent]="this"></app-userdetails>
+        </div>
+    </div>
+    <div class="row" *ngIf="user.role=='participant'">
+        <app-pastworkshops></app-pastworkshops>
+    </div>
+    <div class="row" *ngIf="user.role=='participant'">
+        <app-likescomments></app-likescomments>
+    </div>
+    <div class="row" *ngIf="user.role=='participant'">
+        <app-chat></app-chat>
+    </div>
+    <div class="row" *ngIf="user.role=='organizer'">
+        <app-orgchat></app-orgchat>
+    </div>
+</div>

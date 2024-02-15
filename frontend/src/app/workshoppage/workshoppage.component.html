@@ -1,0 +1,103 @@
+<div class="container">
+    <h2 _ngcontent-ysl-c75="">{{workshop.title}}</h2>
+    <div class="row">
+        <div class="col-6"><img src="http://localhost:4000/gallery/{{workshop.titlePicture}}" class="img-fluid rounded"></div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-3">
+                    <h6>Datum:</h6>
+                </div>
+                <div class="col-auto">
+                    <h6>{{dts(workshop.date)}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <h6>Lokacija:</h6>
+                </div>
+                <div class="col-auto">
+                    <h6>{{workshop.location}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <h6>Kratak opis:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    <h6>{{workshop.shortDesc}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-3">
+            <h5>Duzi opis:</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-auto">
+            <h6>{{workshop.longDesc}}</h6>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-3">
+            <h5>Galerija:</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 my-2" *ngFor="let pic of workshop.gallery">
+            <img src="http://localhost:4000/gallery/{{pic}}" class="img-fluid rounded">
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-auto">
+            <h5>Mapa:</h5>
+            <div class="map-container" id="map"
+                leaflet
+                [leafletOptions]="options"
+                (leafletMapReady)="onMapReady($event)">
+            </div>
+        </div>
+        <div class="col-4">
+            <div *ngIf="!hasSub()">
+                <div *ngIf="seats<workshop.totalSpaces">
+                    <h5>Rezervisi mesto:</h5>
+                    <button class="btn btn-primary mx-1 col-auto btn-lg" (click)="reserve()">Prijavi se</button>
+                </div>
+                <div *ngIf="seats>=workshop.totalSpaces">
+                    <h5>Rezervisi mesto:</h5>
+                    <h6>Sva mesta su popunjena ali ze mozete prijaviti za notifikaciju ukoliko se oslobodi neko mesto</h6>
+                    <button class="btn btn-secondary mx-1 col-auto" (click)="notif()">Obavesti me</button>
+                </div>
+            </div>
+            <div *ngIf="hasSub()">
+                <h5>Rezervisi mesto:</h5>
+                <h6>{{descriptiveType()}}</h6>
+            </div>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-3">
+            <div class="row mt-3">
+                <h5 class="col mt-1">Svidjanja: {{likelist.length}}</h5>
+                <div class="col-auto" *ngIf="canlike">
+                    <button *ngIf="!likes()" class="btn btn-danger mx-1" (click)="like()">Svidja mi se</button>
+                    <button *ngIf="likes()" class="btn btn-danger mx-1" (click)="unlike()">Ne svidja mi se</button>
+                </div>
+            </div>
+            <div *ngIf="canlike" class="mt-2">
+                <h6>Korisnici kojima se svidja:</h6>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let li of likelist">{{li.user.username}}</li>
+                  </ul>
+            </div>
+        </div>
+        <div class="col-6"><app-commentbar [comments]="commentlist" [parent]="this"></app-commentbar></div>
+        <div class="col-3" *ngIf="!thread">
+            <button class="btn btn-primary mx-1" (click)="startThread()">Zapocnite caskanje</button>
+        </div>
+        <div class="col-3 my-2" *ngIf="thread"><app-thread [role]="'user'" [thread]="thread" [openthreads]="null" [parent]="this"></app-thread></div>
+    </div>
+</div>

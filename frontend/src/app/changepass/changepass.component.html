@@ -1,0 +1,17 @@
+<main class="w-100" style="max-width: 330px">
+    <h1 class="h3 mb-3 fw-normal">Promena Lozinke</h1>
+    <div class="form-floating  my-2">
+        <input type="password" class="form-control" id="floatingPassword" [(ngModel)]='old' placeholder="stara lozinka">
+        <label for="floatingPassword">Stara lozinka</label>
+    </div>
+    <div class="form-floating  my-2">
+        <input type="password" class="form-control" id="floatingPassword" [(ngModel)]='new' placeholder="nova lozinka">
+        <label for="floatingPassword">Nova lozinka</label>
+    </div>
+    <div class="form-floating  my-2">
+        <input type="password" class="form-control" id="floatingPassword" [(ngModel)]='new2' placeholder="ponovljena nova lozinka">
+        <label for="floatingPassword">Ponovljena nova lozinka</label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" (click)='change()'>Promeni lozinku</button>
+    <p class='greska my-2'>{{msg.errmsg}}</p>
+</main>

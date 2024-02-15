@@ -1,17 +1,21 @@
-import { Request, Response } from "express"
+import { Request, Response } from 'express'
 
 export function statusResponse(res: Response,status: number)
 {
     res.json({status: status})
 }
 
-export function status(body, status)
+export function redirectResponse(res: Response, destination)
 {
-    body.status = status
+    res.json({status: 302, destination:destination})
 }
 
-export function redirect(body, destination)
+export function msgResponse(res: Response, status, msg)
 {
-    status(body, 302)
-    body.destination = destination
+    res.json({status: status, msg:msg})
+}
+
+export function status(body,status)
+{
+    return {data:body,status:status}
 }

@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Radionice</h4><a class="col-auto btn btn-primary" routerLink="/admin/suggest">Dodaj</a>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Naziv</th>
+            <th>Datum</th>
+            <th>Lokacija</th>
+            <th>KratakOpis</th>
+            <th>BrojMesta</th>
+            <th>Organizator</th>
+            <th style="min-width: 145px;"></th>
+        </tr>
+        <tr *ngFor="let workshop of workshops">
+            <td><img src="http://localhost:4000/gallery/{{workshop.titlePicture}}" alt="mdo" style="max-height: 250px; max-width: 350px;" class="rounded me-3"></td>
+            <td>{{workshop.title}}</td>
+            <td>{{dts(workshop.date)}}</td>
+            <td>{{workshop.location}}</td>
+            <td>{{workshop.shortDesc}}</td>
+            <td>{{workshop.totalSpaces}}</td>
+            <td>{{workshop.organizer.username}}</td>
+            <td>
+                <div>
+                    <button class="btn btn-primary mx-1" (click)="open(workshop)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg></button>
+                    <button class="btn btn-danger mx-1" (click)="del(workshop)">Obrisi</button>
+                </div>
+            </td>   
+        </tr>
+    </table>
+    <div *ngIf="currentworkshop">
+        <div class="row my-3">
+            <h4 class="col-auto mt-1">Detalji Radionice</h4><a class="col-auto btn btn-secondary" (click)="close()">Zatvori</a>
+        </div>
+        <app-workshopdetails [workshop]="deep(currentworkshop)" [role]="'admin'" [parent]="this"></app-workshopdetails>
+    </div>
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Zahtevi</h4>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Naziv</th>
+            <th>Datum</th>
+            <th>Lokacija</th>
+            <th>KratakOpis</th>
+            <th>BrojMesta</th>
+            <th>Organizator</th>
+            <th style="min-width: 145px;"></th>
+        </tr>
+        <tr *ngFor="let workshop of pending">
+            <td><img src="http://localhost:4000/gallery/{{workshop.titlePicture}}" alt="mdo" style="max-height: 250px; max-width: 350px;" class="rounded me-3"></td>
+            <td>{{workshop.title}}</td>
+            <td>{{dts(workshop.date)}}</td>
+            <td>{{workshop.location}}</td>
+            <td>{{workshop.shortDesc}}</td>
+            <td>{{workshop.totalSpaces}}</td>
+            <td>{{workshop.organizer.username}}</td>
+            <td>
+                <div>
+                    <button class="btn btn-success mx-1" (click)="accept(workshop)" *ngIf="isValid(workshop.organizer._id)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg></button>
+                      <button class="btn btn-success mx-1" disabled *ngIf="!isValid(workshop.organizer._id)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg></button>
+                    <button class="btn btn-danger mx-1" (click)="reject(workshop)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                      </svg></button>
+                </div>
+            </td>  
+        </tr>
+    </table>
+</div>

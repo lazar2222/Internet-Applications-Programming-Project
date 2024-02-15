@@ -1,0 +1,134 @@
+[{
+  "_id": {
+    "$oid": "63f3395d9f7df3da923d3d64"
+  },
+  "firstName": "Admin",
+  "lastName": "Admin",
+  "username": "admin",
+  "password": "Admin1`1`1`",
+  "phone": "060000000",
+  "email": "lazar2premovic+admin@gmail.com",
+  "role": "admin",
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "firstName": "Ucesnik",
+  "lastName": "Jedan",
+  "username": "ucesnik1",
+  "password": "Ucesnik11`1`1`",
+  "phone": "0610000001",
+  "email": "lazar2premovic+ucesnik1@gmail.com",
+  "role": "participant",
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "firstName": "Ucesnik",
+  "lastName": "Dva",
+  "username": "ucesnik2",
+  "password": "Ucesnik21`1`1`",
+  "phone": "0610000002",
+  "email": "lazar2premovic+ucesnik2@gmail.com",
+  "role": "participant",
+  "status": "active",
+  "picture": "1676884676428-840411820.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "firstName": "Ucesnik",
+  "lastName": "Tri",
+  "username": "ucesnik3",
+  "password": "Ucesnik31`1`1`",
+  "phone": "0610000003",
+  "email": "lazar2premovic+ucesnik3@gmail.com",
+  "role": "participant",
+  "status": "active",
+  "picture": "1676884743565-670519888.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "firstName": "Ucesnik",
+  "lastName": "Cetiri",
+  "username": "ucesnik4",
+  "password": "Ucesnik41`1`1`",
+  "phone": "0610000004",
+  "email": "lazar2premovic+ucesnik4@gmail.com",
+  "role": "participant",
+  "status": "active",
+  "picture": "1676884831252-190156619.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33bb09f7df3da923d3d71"
+  },
+  "firstName": "Ucesnik",
+  "lastName": "Na cekanju",
+  "username": "nacekanju",
+  "password": "Nacekanju1`1`1`",
+  "phone": "0610000009",
+  "email": "lazar2premovic+nacekanju@gmail.com",
+  "role": "participant",
+  "status": "pending",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33bd89f7df3da923d3d73"
+  },
+  "firstName": "Ucesnik",
+  "lastName": "Odbijen",
+  "username": "odbijen",
+  "password": "Odbijen1`1`1`",
+  "phone": "0610000010",
+  "email": "lazar2premovic+odbijen@gmail.com",
+  "role": "participant",
+  "status": "inactive",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "firstName": "Organizator",
+  "lastName": "Jedan",
+  "username": "organizator1",
+  "password": "Organizator11`1`",
+  "phone": "0620000001",
+  "email": "lazar2premovic+organizator1@gmail.com",
+  "role": "organizer",
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "firstName": "Organizator",
+  "lastName": "Dva",
+  "username": "organizator2",
+  "password": "Organizator21`1`",
+  "phone": "0620000002",
+  "email": "lazar2premovic+organizator2@gmail.com",
+  "role": "organizer",
+  "status": "active",
+  "orgName": "Naziv Organizacije",
+  "address": {
+    "country": "Srbija",
+    "city": "Beograd",
+    "zip": "11000",
+    "street": "Ruzveltova",
+    "number": "5b",
+    "_id": {
+      "$oid": "63f33c639f7df3da923d3d79"
+    }
+  },
+  "orgId": 123,
+  "picture": "1676885091381-142248961.jpg",
+  "__v": 0
+}]

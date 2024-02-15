@@ -1,0 +1,38 @@
+<div class="row my-3">
+    <h4 class="col-auto mt-1">Moje radionice</h4>
+</div>
+<table class="table table-bordered">
+    <tr>
+        <th></th>
+        <th>Naziv</th>
+        <th>Datum</th>
+        <th>Lokacija</th>
+        <th>KratakOpis</th>
+        <th>BrojMesta</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let workshop of workshop">
+        <td><img src="http://localhost:4000/gallery/{{workshop.titlePicture}}" alt="mdo" style="max-height: 250px; max-width: 350px;" class="rounded me-3"></td>
+        <td>{{workshop.title}}</td>
+        <td>{{dts(workshop.date)}}</td>
+        <td>{{workshop.location}}</td>
+        <td>{{workshop.shortDesc}}</td>
+        <td>{{workshop.totalSpaces}}</td>
+        <td>
+            <div>
+                <button class="btn btn-primary mx-1" (click)="open(workshop)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg></button>
+            </div>
+        </td>   
+    </tr>
+</table>
+<div *ngIf="currentworkshop">
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Poruke za {{currentworkshop.title}} </h4><a class="col-auto btn btn-secondary" (click)="close()">Zatvori</a>
+    </div>
+    <div class="row my-3">
+        <div class="col-3 overflow-auto my-2" style="max-height: 600px;"><app-threads [role]="'organizer'" [threads]="threads" [openthreads]="openthreads"></app-threads></div>
+        <div class="col-3 my-2" *ngFor="let thread of openthreads"><app-thread [role]="'organizer'" [thread]="thread" [openthreads]="openthreads" [parent]="this"></app-thread></div>
+    </div>
+</div>

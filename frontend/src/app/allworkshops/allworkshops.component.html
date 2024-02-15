@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Radionice</h4>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Naziv</th>
+            <th>Datum</th>
+            <th>Lokacija</th>
+            <th>KratakOpis</th>
+            <th style="min-width: 196px;"></th>
+        </tr>
+        <tr *ngFor="let workshop of workshops">
+            <td><img src="http://localhost:4000/gallery/{{workshop.titlePicture}}" alt="mdo" style="max-height: 250px; max-width: 350px;" class="rounded me-3"></td>
+            <td>{{workshop.title}}</td>
+            <td>{{dts(workshop.date)}}</td>
+            <td>{{workshop.location}}</td>
+            <td>{{workshop.shortDesc}}</td>
+            <td>
+                <div *ngIf="workshop.organizer==id.user._id">
+                    <button class="btn btn-primary mx-1" (click)="open(workshop)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg></button>
+                    <button class="btn btn-danger mx-1" (click)="del(workshop)">Otkazi</button>
+                    <button class="col-auto btn btn-info mx-1" (click)="save(workshop)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg></button>
+                </div>
+            </td>   
+        </tr>
+    </table>
+    <div *ngIf="currentworkshop">
+        <div class="row my-3">
+            <h4 class="col-auto mt-1">Detalji Radionice</h4><a class="col-auto btn btn-secondary" (click)="close()">Zatvori</a>
+        </div>
+        <app-workshopdetails [workshop]="deep(currentworkshop)" [role]="'organizer'" [parent]="this"></app-workshopdetails>
+    </div>
+</div>

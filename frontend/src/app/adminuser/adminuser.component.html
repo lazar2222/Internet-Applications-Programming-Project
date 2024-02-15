@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Korisnici</h4><a class="col-auto btn btn-primary" routerLink="/admin/register">Dodaj</a>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Ime i prezime</th>
+            <th>Korisnicko ime</th>
+            <th>Telefon</th>
+            <th>Email</th>
+            <th>Uloga</th>
+            <th>Status</th>
+            <th style="min-width: 145px;"></th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td><img *ngIf="user.picture" src="http://localhost:4000/profile/{{user.picture}}" alt="mdo" width="64" height="64" class="rounded-circle me-3"></td>
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.email}}</td>
+            <td>{{displayRole(user.role)}}</td>
+            <td>{{displayStatus(user.status)}}</td>
+            <td>
+                <div>
+                    <button class="btn btn-primary mx-1" (click)="open(user)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg></button>
+                    <button class="btn btn-danger mx-1" (click)="del(user)">Obrisi</button>
+                </div>
+            </td>   
+        </tr>
+    </table>
+    <div *ngIf="currentuser">
+        <div class="row my-3">
+            <h4 class="col-auto mt-1">Detalji korisnika</h4><a class="col-auto btn btn-secondary" (click)="close()">Zatvori</a>
+        </div>
+        <app-userdetails [user]="deep(currentuser)" [role]="'admin'" [parent]="this"></app-userdetails>
+    </div>
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Zahtevi</h4>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Ime i prezime</th>
+            <th>Korisnicko ime</th>
+            <th>Telefon</th>
+            <th>Email</th>
+            <th>Uloga</th>
+            <th>Status</th>
+            <th style="min-width: 145px;"></th>
+        </tr>
+        <tr *ngFor="let user of pending">
+            <td><img *ngIf="user.picture" src="http://localhost:4000/profile/{{user.picture}}" alt="mdo" width="64" height="64" class="rounded-circle me-3"></td>
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.email}}</td>
+            <td>{{displayRole(user.role)}}</td>
+            <td>{{displayStatus(user.status)}}</td>
+            <td>
+                <div>
+                    <button class="btn btn-success mx-1" (click)="accept(user)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg></button>
+                    <button class="btn btn-danger mx-1" (click)="reject(user)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                      </svg></button>
+                </div>
+            </td>   
+        </tr>
+    </table>
+</div>

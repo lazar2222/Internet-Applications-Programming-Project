@@ -1,0 +1,11 @@
+<main class="w-100 m-auto" style="max-width: 330px; padding: 15px;">
+    <h1 class="h3 mb-3 fw-normal">Zaboravili ste lozinku?</h1>
+
+    <div class="form-floating my-2">
+      <input type="email" class="form-control" id="floatingInput" [(ngModel)]='email' placeholder="neko@primer.rs">
+      <label for="floatingInput">email</label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" (click)='prijavaNaSistem()'>Posalji kod</button>
+    <p class='greska my-2'>{{msg.errmsg}}</p>
+    <p class='my-2'>{{msg.msg}}</p>
+</main>

@@ -1,0 +1,36 @@
+<div class="row mt-3">
+    <h5 class="col mt-1">Komentari:</h5>
+</div>
+<div class="row mt-3">
+    <h5 class="col mt-1">Komentari:</h5>
+</div>
+<div class="row g-0">
+    <div class="col ms-2 me-0">
+        <textarea class="form-control" type="text" placeholder="Ostavite komentar" [(ngModel)]="comment"></textarea>
+        <p class='greska my-2'>{{msg}}</p>
+    </div>
+    <div class="col-auto d-flex">
+        <button class="btn btn-primary btn-lg mx-2 mt-auto" (click)="post()">Posalji</button>
+    </div>
+</div>
+<hr>
+<div *ngFor="let comment of comments">
+    <table class="my-2">
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <span class="fw-bold">{{comment.user.firstName}} {{comment.user.LastName}}</span>, <span *ngIf="comment.date">{{dts(comment.date)}}</span>
+            </td>
+        </tr>
+        <tr class="mt-1">
+            <td class="pe-1 d-flex">
+                <img *ngIf="comment.user.picture" src="http://localhost:4000/profile/{{comment.user.picture}}" width="32" height="32" class="rounded-circle">
+            </td>
+            <td><div class="bg-light border border-dark border-opacity-25 border-2 rounded p-1">
+                {{comment.comment}}
+            </div></td>
+        </tr>
+    </table>
+</div>

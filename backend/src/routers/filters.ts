@@ -1,5 +1,5 @@
-import { Request, Response } from "express"
-import { statusResponse } from "../helpers/response.helper"
+import { Request, Response } from 'express'
+import { statusResponse } from '../helpers/response.helper'
 
 export function filterGuest(req, res, next)
 {

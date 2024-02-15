@@ -18,9 +18,9 @@ export function mandatoryFileValidator(prefix: String)
 
 export function ArrayValidator(validator, maxLen)
 {
-    return (arr) => 
+    return (arr:Array<String>) => 
     {
-        if(arr <= maxLen)
+        if(arr.length <= maxLen)
         {
             for (var elem of arr)
             {
@@ -29,6 +29,7 @@ export function ArrayValidator(validator, maxLen)
                     return false
                 }
             }
+            return true
         }
         return false
     }

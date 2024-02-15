@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row" *ngIf="user.role=='participant'">
+        <app-currentworkshops></app-currentworkshops>
+    </div>
+    <div class="row" *ngIf="user.role=='participant'">
+        <app-activeworkshops></app-activeworkshops>
+    </div>
+    <div class="row" *ngIf="user.role=='organizer'">
+        <app-allworkshops></app-allworkshops>
+    </div>
+</div>

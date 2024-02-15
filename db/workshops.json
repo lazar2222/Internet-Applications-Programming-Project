@@ -1,0 +1,286 @@
+[{
+  "_id": {
+    "$oid": "63f340809f7df3da923d3e34"
+  },
+  "gallery": [],
+  "title": "Radionica 1",
+  "titlePicture": "1676886144579-250367924.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1577877120000"
+    }
+  },
+  "location": "Elektrotehnicki fakultet, Beograd",
+  "shortDesc": "Radionica 1 u proslosti, imace 4 svidjanja",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 10,
+  "organizer": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f341cd9f7df3da923d3eac"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg"
+  ],
+  "title": "Radionica 1",
+  "titlePicture": "1676886477661-109289712.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1704107520000"
+    }
+  },
+  "location": "Elektrotehnicki fakultet, Beograd",
+  "shortDesc": "Radionica 1 u buducnosti",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 3,
+  "organizer": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f342d09f7df3da923d3ed7"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg",
+    "1676886723151-19675315.jpg"
+  ],
+  "title": "Radionica 2",
+  "titlePicture": "1676886736302-656122831.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1580642040000"
+    }
+  },
+  "location": "Masinski fakultet, Beograd",
+  "shortDesc": "Radionica 2 u proslosti, imace 4 svidjanja",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 10,
+  "organizer": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3433b9f7df3da923d3ed9"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg",
+    "1676886829394-763526790.jpg",
+    "1676886833558-924295383.jpg"
+  ],
+  "title": "Radionica 2",
+  "titlePicture": "1676886843768-939826473.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1706872440000"
+    }
+  },
+  "location": "Masinski fakultet, Beograd",
+  "shortDesc": "Radionica 2 u buducnosti",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 3,
+  "organizer": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f343809f7df3da923d3edb"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg",
+    "1676886898558-17584555.jpg",
+    "1676886902460-986832725.jpg",
+    "1676886906622-240252825.jpg"
+  ],
+  "title": "Radionica 3",
+  "titlePicture": "1676886912517-552176750.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1583234160000"
+    }
+  },
+  "location": "Vukov spomenik, Beograd",
+  "shortDesc": "Radionica 3 u proslosti, imace 1 svidjanje",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 10,
+  "organizer": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f343c79f7df3da923d3edd"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg",
+    "1676886962287-306686142.jpg",
+    "1676886965896-627253413.jpg",
+    "1676886971317-650923882.jpg",
+    "1676886982360-766278175.jpg"
+  ],
+  "title": "Radionica 3",
+  "titlePicture": "1676886983731-863386423.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1709464560000"
+    }
+  },
+  "location": "Vukov spomenik, Beograd",
+  "shortDesc": "Radionica 3 u buducnosti",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 3,
+  "organizer": {
+    "$oid": "63f33c239f7df3da923d3d76"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f344419f7df3da923d3eea"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg"
+  ],
+  "title": "Radionica 4",
+  "titlePicture": "1676887105861-884511464.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1585995480000"
+    }
+  },
+  "location": "Juzni Bulevar 18, Beograd",
+  "shortDesc": "Radionica 4 u proslosti, imace 2 svidjanja",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 10,
+  "organizer": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f344609f7df3da923d3eec"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg"
+  ],
+  "title": "Radionica 4",
+  "titlePicture": "1676887136843-660113746.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1712225880000"
+    }
+  },
+  "location": "Juzni bulevar 18, Beograd",
+  "shortDesc": "Radionica 4 u buducnosti",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 3,
+  "organizer": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f344929f7df3da923d3eee"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg"
+  ],
+  "title": "Radionica 5",
+  "titlePicture": "1676887186020-539893394.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1588674000000"
+    }
+  },
+  "location": "TC Usce, Beograd",
+  "shortDesc": "Radionica 5 u proslosti, imace 3 svidjanja",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 10,
+  "organizer": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f344bd9f7df3da923d3ef0"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg"
+  ],
+  "title": "Radionica 5",
+  "titlePicture": "1676887228600-309946090.jpg",
+  "date": {
+    "$date": {
+      "$numberLong": "1714904400000"
+    }
+  },
+  "location": "TC Usce, Beograd",
+  "shortDesc": "Radionica 5 u buducnosti",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 3,
+  "organizer": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f344f19f7df3da923d3ef2"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg"
+  ],
+  "title": "Radionica 6",
+  "titlePicture": "1676887281293-114760578.png",
+  "date": {
+    "$date": {
+      "$numberLong": "1591438920000"
+    }
+  },
+  "location": "Terazije, Beograd",
+  "shortDesc": "Radionica 6 u proslosti, imace 2 svidjanja",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 10,
+  "organizer": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "status": "active",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3450f9f7df3da923d3ef4"
+  },
+  "gallery": [
+    "1676886474936-528824397.jpg",
+    "1676887302239-215019380.jpg"
+  ],
+  "title": "Radionica 6",
+  "titlePicture": "1676887311319-312738243.png",
+  "date": {
+    "$date": {
+      "$numberLong": "1717669320000"
+    }
+  },
+  "location": "Terazije, Beograd",
+  "shortDesc": "Radionica 6 u buducnosti",
+  "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet augue quis nunc accumsan dictum. Aenean quis odio quis enim mattis volutpat ultricies eget libero. Cras vel leo nec ligula accumsan blandit in in mauris. Praesent elementum sapien eget erat euismod, nec lacinia metus scelerisque. Sed vehicula, erat at consequat pretium, augue massa volutpat nisl, non euismod nunc arcu id nibh. Nullam a gravida mauris. Vivamus consequat porttitor vulputate. Donec hendrerit mauris ut aliquet fringilla. Vivamus laoreet nisl at interdum facilisis. Pellentesque ultrices nunc vitae felis tincidunt volutpat. Donec mollis tincidunt purus. Donec finibus magna vel nibh fermentum vestibulum. In posuere, urna eu bibendum consequat, leo arcu vestibulum eros, sit amet pellentesque eros mi id orci.",
+  "totalSpaces": 3,
+  "organizer": {
+    "$oid": "63f33c639f7df3da923d3d78"
+  },
+  "status": "active",
+  "__v": 0
+}]

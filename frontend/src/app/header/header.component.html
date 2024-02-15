@@ -1,0 +1,25 @@
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+        <a *ngIf="role=='guest'" routerLink="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+            <span class="fs-4">PIA projekat</span>
+          </a>
+
+          <a *ngIf="role!='guest'" routerLink='{{items[0].link}}' class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+            <span class="fs-4">PIA projekat</span>
+          </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li *ngFor='let n of items'><a routerLink='{{n.link}}' class="nav-link px-2 link-secondary">{{n.name}}</a></li>
+      </ul>
+      <div *ngIf="role=='guest'" class="col-md-3 text-end">
+        <a routerLink='login' class="btn btn-outline-primary me-2">Prijava</a>
+        <a routerLink='register' class="btn btn-primary">Registracija</a>
+      </div>
+      <div *ngIf="role!='guest'" class="col-md-3 text-end">
+        <span class="me-3">{{user.firstName}} {{user.lastName}}</span>
+        <img *ngIf="user.picture" src="http://localhost:4000/profile/{{user.picture}}" alt="mdo" width="32" height="32" class="rounded-circle me-3">
+        <a (click)="logout()" class="btn btn-primary">Odjavi se</a>
+      </div>
+    </header>
+  </div>

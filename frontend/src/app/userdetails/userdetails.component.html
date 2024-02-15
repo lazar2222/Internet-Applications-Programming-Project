@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-6">
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.firstName' placeholder="ime">
+            <label for="floatingInput">Ime</label>
+          </div>
+          <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.lastName' placeholder="prezime">
+            <label for="floatingInput">Prezime</label>
+          </div>
+        <div class="form-floating my-2">
+          <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.username' placeholder="korisnicko ime">
+          <label for="floatingInput">Korisnicko ime</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.phone' placeholder="telefon">
+            <label for="floatingInput">Telefon</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="email" class="form-control" id="floatingInput" [(ngModel)]='myuser.email' placeholder="email">
+            <label for="floatingInput">Email</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-success" (click)='update()'>Azuriraj</button>
+        <div class="my-2">
+            <label for="formFile" class="form-label">Profilna slika</label>
+            <input class="form-control" type="file" id="formFile" (change)="file($event.target)">
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" (click)='updatepic()'>Azuriraj sliku</button>
+        <p class='greska my-2' style="white-space: pre;">{{msg.errmsg}}</p>
+        <p class='my-2' style="white-space: pre;">{{msg.msg}}</p>
+    </div>
+    <div class="col-6" *ngIf="myuser.role=='organizer'">
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.orgName' placeholder="organizacija">
+            <label for="floatingInput">Naziv organizacije</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="number" class="form-control" id="floatingInput" [(ngModel)]='myuser.orgId' placeholder="maticni broj">
+            <label for="floatingInput">Maticni broj organizacije</label>
+        </div>
+        <p>Adresa organizacije:</p>
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.address.country' placeholder="drzava">
+            <label for="floatingInput">Drzava</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="nu" class="form-control" id="floatingInput" [(ngModel)]='myuser.address.city' placeholder="grad">
+            <label for="floatingInput">Grad</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.address.zip' placeholder="postanski broj">
+            <label for="floatingInput">Postanski broj</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.address.street' placeholder="ulica">
+            <label for="floatingInput">Ulica</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='myuser.address.number' placeholder="broj">
+            <label for="floatingInput">Broj</label>
+        </div>
+    </div>
+</div>

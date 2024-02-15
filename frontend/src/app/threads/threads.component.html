@@ -1,0 +1,8 @@
+<div class="list-group">
+    <div  *ngIf="role=='user'">
+        <button type="button" class="list-group-item list-group-item-action" *ngFor="let thread of threads" (click)="add(thread)">{{thread.workshopTitle}}</button>
+    </div>
+    <div  *ngIf="role=='organizer'">
+        <button type="button" class="list-group-item list-group-item-action" *ngFor="let thread of threads" (click)="add(thread)">{{thread.displayUser}}</button>
+    </div>
+</div>

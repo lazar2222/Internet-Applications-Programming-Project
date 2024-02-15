@@ -1,5 +1,5 @@
-import mongoose from "mongoose"
-import { fileValidator } from "./validators"
+import mongoose from 'mongoose'
+import { fileValidator } from './validators'
 
 const Schema = mongoose.Schema
 

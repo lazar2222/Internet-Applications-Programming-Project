@@ -1,0 +1,28 @@
+<div class="row my-3">
+    <h4 class="col-auto mt-1">Aktivne prijave</h4>
+</div>
+<table class="table table-bordered">
+    <tr>
+        <th></th>
+        <th>Naziv</th>
+        <th>Datum</th>
+        <th>Lokacija</th>
+        <th>KratakOpis</th>
+        <th>Tip</th>
+        <th style="min-width: 145px;"></th>
+    </tr>
+    <tr *ngFor="let workshop of workshops">
+        <td><img src="http://localhost:4000/gallery/{{workshop.titlePicture}}" alt="mdo" style="max-height: 250px; max-width: 350px;" class="rounded me-3"></td>
+        <td>{{workshop.title}}</td>
+        <td>{{dts(workshop.date)}}</td>
+        <td>{{workshop.location}}</td>
+        <td>{{workshop.shortDesc}}</td>
+        <td>{{descriptiveType(workshop.type)}}</td>
+        <td>
+            <div>
+                <button *ngIf="cancelable(workshop)" class="btn btn-danger mx-1" (click)="cancel(workshop)">Otkazi</button>
+                <button *ngIf="!cancelable(workshop)" class="btn btn-danger mx-1" disabled>Otkazi</button>
+            </div>
+        </td>   
+    </tr>
+</table>

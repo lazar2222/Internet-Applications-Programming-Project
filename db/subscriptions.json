@@ -1,0 +1,457 @@
+[{
+  "_id": {
+    "$oid": "63f345ae9f7df3da923d3fc5"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f340809f7df3da923d3e34"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f345b49f7df3da923d3fd5"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f342d09f7df3da923d3ed7"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f345c59f7df3da923d3fe5"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f343809f7df3da923d3edb"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346079f7df3da923d3ff5"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f344929f7df3da923d3eee"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346219f7df3da923d4012"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f340809f7df3da923d3e34"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3462e9f7df3da923d4022"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f342d09f7df3da923d3ed7"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346409f7df3da923d4032"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f344419f7df3da923d3eea"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346459f7df3da923d4042"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f344929f7df3da923d3eee"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3464e9f7df3da923d4052"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f344f19f7df3da923d3ef2"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346779f7df3da923d406f"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f344f19f7df3da923d3ef2"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3468f9f7df3da923d4096"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f340809f7df3da923d3e34"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346929f7df3da923d40a6"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f342d09f7df3da923d3ed7"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f3469a9f7df3da923d40b6"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f343809f7df3da923d3edb"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346a29f7df3da923d40cb"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f344419f7df3da923d3eea"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346b39f7df3da923d40db"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f344929f7df3da923d3eee"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346e19f7df3da923d40fd"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f340809f7df3da923d3e34"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346e49f7df3da923d410d"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f342d09f7df3da923d3ed7"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346eb9f7df3da923d411d"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f344419f7df3da923d3eea"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346ef9f7df3da923d412d"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f344929f7df3da923d3eee"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f346f49f7df3da923d413d"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f344f19f7df3da923d3ef2"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34ad49f7df3da923d43c9"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f341cd9f7df3da923d3eac"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34adb9f7df3da923d43e0"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f3433b9f7df3da923d3ed9"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34ae49f7df3da923d43f2"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f343c79f7df3da923d3edd"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b149f7df3da923d4420"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f344bd9f7df3da923d3ef0"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b189f7df3da923d4432"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f3450f9f7df3da923d3ef4"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b309f7df3da923d4451"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f341cd9f7df3da923d3eac"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b379f7df3da923d4463"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f3433b9f7df3da923d3ed9"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b3b9f7df3da923d4475"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f343c79f7df3da923d3edd"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b3e9f7df3da923d4487"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f344609f7df3da923d3eec"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b429f7df3da923d4499"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f344bd9f7df3da923d3ef0"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b459f7df3da923d44ab"
+  },
+  "user": {
+    "$oid": "63f33ac49f7df3da923d3d6b"
+  },
+  "workshop": {
+    "$oid": "63f3450f9f7df3da923d3ef4"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b599f7df3da923d44ca"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f341cd9f7df3da923d3eac"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b609f7df3da923d44ee"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f343c79f7df3da923d3edd"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34b649f7df3da923d4500"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f344609f7df3da923d3eec"
+  },
+  "type": "participation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34c8b9f7df3da923d45c4"
+  },
+  "user": {
+    "$oid": "63f339af9f7df3da923d3d67"
+  },
+  "workshop": {
+    "$oid": "63f344609f7df3da923d3eec"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34cf69f7df3da923d4627"
+  },
+  "user": {
+    "$oid": "63f33b079f7df3da923d3d6d"
+  },
+  "workshop": {
+    "$oid": "63f3433b9f7df3da923d3ed9"
+  },
+  "type": "reservation",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34f7f7da3117def94fcda"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f341cd9f7df3da923d3eac"
+  },
+  "type": "notification",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f34f837da3117def94fcec"
+  },
+  "user": {
+    "$oid": "63f33b5f9f7df3da923d3d6f"
+  },
+  "workshop": {
+    "$oid": "63f3433b9f7df3da923d3ed9"
+  },
+  "type": "notification",
+  "__v": 0
+}]

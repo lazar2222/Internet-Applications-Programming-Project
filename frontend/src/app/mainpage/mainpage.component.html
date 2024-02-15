@@ -1,0 +1,41 @@
+<div class="container">
+    <h2>Aktuelne radionice</h2>
+    <div class="row my-3 mx-3">
+        <label class="col-auto col-form-label px-0">Pretrazi:</label>
+        <div class="col-4 px-1"><input class="form-control" type="text" (input)="changeText($event.target)" [(ngModel)]="text"></div>
+        <label class="col-auto col-form-label mx-0 px-0">po</label>
+        <div class="col-2 px-1"><select class="form-select" (change)="changeFilter()" [(ngModel)]="criteria">
+            <option value="0" selected>Nazivu</option>
+            <option value="1">Mestu</option>
+            <option value="2">Nazivu ili Mestu</option>
+        </select></div>
+        <label class="col-auto col-form-label ms-4 me-0 px-0">Sortiraj po:</label>
+        <div class="col-2 px-1"><select class="form-select" (change)="sortlist()" [(ngModel)]="sort">
+            <option value="0" selected>Nazivu</option>
+            <option value="1">Datumu</option>
+        </select></div>
+    </div>
+    <div class="container justify-content-center d-flex flex-column">
+        <div class="card mb-3 w-100" *ngFor="let w of workshops">
+            <div class="row g-0">
+                <div class="col-auto d-flex justify-content-center">
+                    <img src="http://localhost:4000/gallery/{{w.titlePicture}}" class="img-fluid rounded" style="max-height: 350px; max-width: 640px;">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <div class="row d-flex justify-content-between">
+                            <h5 class="card-title col-auto">{{w.title}}</h5>
+                            <h6 class="card-title col-auto mt-1">{{dts(w.date)}}</h6>
+                        </div>
+                        <h6 class="card-title">{{w.location}}</h6>
+                        <p class="card-text">{{w.shortDesc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Top 5 radionica</h2>
+    <ol>
+        <li *ngFor="let w of topfive" class="fs-5">{{w.name}}</li>
+    </ol>
+</div>

@@ -1,0 +1,104 @@
+<div class="list-group">
+<div style="height: 60px;" class="list-group-item active fw-bold p-1">
+    <div class="row g-0 h-100 d-flex align-items-center justify-content-center">
+        <div class="col ms-2 me-0">
+            <span *ngIf="role=='user'">Nit o radionici: {{thread.workshopTitle}}</span>
+            <span *ngIf="role=='organizer'">Nit sa korisnikom: {{thread.displayUser}}</span>
+        </div>
+        <div class="col-auto" *ngIf="openthreads">
+            <button class="btn btn-danger mx-2" (click)="close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg></button>
+        </div>
+    </div>
+    
+</div>
+<div style="height: 480px;" class="list-group-item overflow-auto" #chat id="chat">
+    <div *ngFor="let message of thread.messages">
+        <table class="my-2" *ngIf='message.direction=="W2U" && role=="user"'>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <span class="fw-bold">{{thread.displayOrganizer}}</span>, {{dts(message.date)}}
+                </td>
+            </tr>
+            <tr class="mt-1">
+                <td class="pe-1 d-flex">
+                    <img *ngIf="thread.organizerPicture" src="http://localhost:4000/profile/{{thread.organizerPicture}}" width="32" height="32" class="rounded-circle">
+                </td>
+                <td><div class="bg-light border border-dark border-opacity-25 border-2 rounded p-1">
+                    {{message.text}}
+                </div></td>
+            </tr>
+        </table>
+        <table class="my-2 ms-auto" *ngIf='message.direction!="W2U" && role=="user"'>
+            <tr>
+                <td>
+                    <span class="fw-bold">Ja</span>, {{dts(message.date)}}
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr class="mt-1">
+                <td><div class="bg-success bg-opacity-25 border border-success border-opacity-50 border-2 rounded p-1">
+                    {{message.text}}
+                </div></td>
+                <td class="pe-1 d-flex">
+                    <img *ngIf="thread.userPicture" src="http://localhost:4000/profile/{{thread.userPicture}}" width="32" height="32" class="rounded-circle">
+                </td>
+            </tr>
+        </table>
+        <table class="my-2" *ngIf='message.direction=="U2W" && role=="organizer"'>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <span class="fw-bold">{{thread.displayUser}}</span>, {{dts(message.date)}}
+                </td>
+            </tr>
+            <tr class="mt-1">
+                <td class="pe-1 d-flex">
+                    <img *ngIf="thread.userPicture" src="http://localhost:4000/profile/{{thread.userPicture}}" width="32" height="32" class="rounded-circle">
+                </td>
+                <td><div class="bg-light border border-dark border-opacity-25 border-2 rounded p-1">
+                    {{message.text}}
+                </div></td>
+            </tr>
+        </table>
+        <table class="my-2 ms-auto" *ngIf='message.direction!="U2W" && role=="organizer"'>
+            <tr>
+                <td>
+                    <span class="fw-bold">Ja</span>, {{dts(message.date)}}
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr class="mt-1">
+                <td><div class="bg-success bg-opacity-25 border border-success border-opacity-50 border-2 rounded p-1">
+                    {{message.text}}
+                </div></td>
+                <td class="pe-1 d-flex">
+                    <img *ngIf="thread.organizerPicture" src="http://localhost:4000/profile/{{thread.organizerPicture}}" width="32" height="32" class="rounded-circle">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="list-group-item px-0">
+    <div class="row g-0">
+        <div class="col ms-2 me-0">
+            <input class="form-control" type="text" placeholder="Napisite poruku" [(ngModel)]="msg">
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary mx-2" (click)="send()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+              </svg></button>
+        </div>
+    </div>
+</div>
+</div>

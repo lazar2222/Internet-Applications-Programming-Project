@@ -1,5 +1,5 @@
-import mongoose from "mongoose"
-import { ArrayValidator, fileValidator, mandatoryFileValidator } from "./validators"
+import mongoose from 'mongoose'
+import { ArrayValidator, fileValidator, mandatoryFileValidator } from './validators'
 
 const Schema = mongoose.Schema
 
@@ -37,7 +37,7 @@ let workshop = new Schema({
     gallery: {
         type: [String],
         trim: true,
-        validate: [ArrayValidator(fileValidator('workshop'),5), '|Slika nije validan fajl']
+        validate: [ArrayValidator(fileValidator('workshop'),5), '|Galerija slika nije validna']
     },
     totalSpaces: {
         type: Number,

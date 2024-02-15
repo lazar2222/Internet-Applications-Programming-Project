@@ -1,0 +1,15 @@
+<main class="w-100 m-auto" style="max-width: 330px; padding: 15px;">
+    <h1 class="h3 mb-3 fw-normal">Prijava za administratore</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" [(ngModel)]='username' placeholder="korisnicko ime">
+      <label for="floatingInput">Korisnicko ime</label>
+    </div>
+    <div class="form-floating my-2">
+      <input type="password" class="form-control" id="floatingPassword" [(ngModel)]='password' placeholder="lozinka">
+      <label for="floatingPassword">Lozinka</label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" (click)='prijavaNaSistem()'>Prijava</button>
+    <p class='greska my-2'>{{msg.errmsg}}</p>
+    <p class='my-2'>Zaboravili ste lozinku? Klinite <a routerLink="forgotten">ovde</a>.</p>
+</main>

@@ -1,0 +1,7 @@
+<div class="row my-3">
+    <h4 class="col-auto mt-1">Poruke</h4>
+</div>
+<div class="row my-3">
+    <div class="col-3 overflow-auto my-2" style="max-height: 600px;"><app-threads [role]="'user'" [threads]="threads" [openthreads]="openthreads"></app-threads></div>
+    <div class="col-3 my-2" *ngFor="let thread of openthreads"><app-thread [role]="'user'" [thread]="thread" [openthreads]="openthreads" [parent]="this"></app-thread></div>
+</div>

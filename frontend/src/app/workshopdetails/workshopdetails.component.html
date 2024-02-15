@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-6">
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='mw.title' placeholder="naziv">
+            <label for="floatingInput">Naziv</label>
+        </div>
+        <div class="my-2">
+            <label for="formFile" class="form-label">Naslovna Slika</label>
+            <input class="form-control" type="file" id="formFile" (change)="titlepicture($event.target)">
+        </div>
+        <div class="form-floating my-2">
+            <input type="datetime-local" class="form-control" id="floatingInput" [(ngModel)]='date' placeholder="datum">
+            <label for="floatingInput">Datum</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingInput" [(ngModel)]='mw.location' placeholder="lokacija">
+            <label for="floatingInput">Lokacija</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating my-2">
+            <input type="text" class="form-control" id="floatingPassword" [(ngModel)]='mw.shortDesc' placeholder="kratak opis">
+            <label for="floatingPassword">Kratak opis</label>
+        </div>
+        <div class="form-floating my-2">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]='mw.longDesc'></textarea>
+            <label for="exampleFormControlTextarea1">Duzi opis</label>
+        </div>
+        <div class="form-floating my-2">
+            <input type="number" class="form-control" id="floatingInput" [(ngModel)]='mw.totalSpaces' placeholder="broj mesta">
+            <label for="floatingInput">Broj mesta</label>
+        </div>
+        <div class="form-floating my-2" *ngIf="role=='admin'">
+            <select class="form-select" [(ngModel)]="mw.organizer._id">
+                <option *ngFor="let v of valid" value="{{v._id}}">{{v.username}}</option>
+            </select>
+            <label for="floatingInput">Organizator</label>
+        </div>
+    </div>
+</div>
+<p>Slike za galeriju (max: 5)</p>
+<div class="row">
+    <div class="col-2" *ngFor="let img of mw.gallery">
+            <img style="max-width: 100%; max-height: 100%;" src='http://localhost:4000/gallery/{{img}}'>
+    </div>
+</div>
+<div class="row my-2">
+    <div class="col-2" *ngFor="let img of mw.gallery">
+        <button class="w-100 btn btn-danger" (click)='remove(img)'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+        </svg></button>
+    </div>
+</div>
+<div class="row" *ngIf="galsize<5">
+    <div class="col">
+        <input class="form-control" type="file" id="formFile" (change)="gallerypicture($event.target)">
+    </div>
+    <div class="col-auto">
+        <button class="w-100 btn btn-secondary" (click)='add()'>Dodaj</button>
+    </div>
+</div>
+<div class="row my-2">
+<button class="w-100 btn btn-lg btn-primary" (click)='suggest()'>Azuriraj</button>
+<p class='greska my-2' style="white-space: pre;">{{msg.errmsg}}</p>
+<p class='my-2' style="white-space: pre;">{{msg.msg}}</p>
+<div *ngIf="role=='organizer'">
+    <div class="row my-3">
+        <h4 class="col-auto mt-1">Zahtevi</h4>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Ime i prezime</th>
+            <th>Korisnicko ime</th>
+            <th style="min-width: 145px;"></th>
+        </tr>
+        <tr *ngFor="let user of pending">
+            <td><img *ngIf="user.user.picture" src="http://localhost:4000/profile/{{user.user.picture}}" alt="mdo" width="64" height="64" class="rounded-circle me-3"></td>
+            <td>{{user.user.firstName}} {{user.user.lastName}}</td>
+            <td>{{user.user.username}}</td>
+            <td>
+                <div>
+                    <button class="btn btn-success mx-1" (click)="accept(user)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg></button>
+                    <button class="btn btn-danger mx-1" (click)="reject(user)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                      </svg></button>
+                </div>
+            </td>   
+        </tr>
+    </table>
+</div>
+</div>
